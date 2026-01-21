@@ -1,7 +1,8 @@
+
 import React from 'react';
-import Hero from '../components/Hero.tsx';
-import Menu from '../components/Menu.tsx';
-import Testimonials from '../components/Testimonials.tsx';
+import Hero from '../components/Hero';
+import Menu from '../components/Menu';
+import Testimonials from '../components/Testimonials';
 import { motion } from 'framer-motion';
 import { Leaf, Award, Users, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';

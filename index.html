@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,10 +33,6 @@
         background-color: #FFFDFB;
         color: #333333;
         scroll-behavior: smooth;
-        margin: 0;
-      }
-      #root {
-        min-height: 100vh;
       }
       .no-scrollbar::-webkit-scrollbar {
         display: none;
@@ -48,23 +45,19 @@
   <script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@^19.2.3",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
     "react/": "https://esm.sh/react@^19.2.3/",
-    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
+    "react": "https://esm.sh/react@^19.2.3",
     "framer-motion": "https://esm.sh/framer-motion@^12.28.1",
     "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
-    "vite": "https://esm.sh/vite@^7.3.1",
-    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0"
   }
 }
 </script>
 </head>
   <body>
     <div id="root"></div>
-    <!-- Vite will process this relative path and transpile the JSX/TSX into valid JS -->
-    <script type="module" src="/index.tsx"></script>
-    
+    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -87,6 +80,20 @@
       },
       "url": "https://homecrumb.bakery",
       "telephone": "+923000000000",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "14:00"
+        }
+      ],
       "priceRange": "PKR"
     }
     </script>

@@ -1,7 +1,8 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Star, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
-import { TESTIMONIALS } from '../constants.tsx';
+import { TESTIMONIALS } from '../constants';
 
 const Testimonials: React.FC = () => {
   return (
