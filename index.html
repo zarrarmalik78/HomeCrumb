@@ -45,27 +45,26 @@
         scrollbar-width: none;
       }
     </style>
-    <!-- Polyfill for Import Maps to ensure reliability across all browsers -->
-    <script async src="https://ga.jspm.io/npm:es-module-shims@1.10.1/dist/es-module-shims.js"></script>
-    <script type="importmap">
+  <script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@19.2.3",
-    "react-dom": "https://esm.sh/react-dom@19.2.3",
-    "react-dom/client": "https://esm.sh/react-dom@19.2.3/client",
-    "framer-motion": "https://esm.sh/framer-motion@12.28.1?external=react,react-dom",
-    "lucide-react": "https://esm.sh/lucide-react@0.562.0?external=react,react-dom",
-    "react-router-dom": "https://esm.sh/react-router-dom@7.12.0?external=react,react-dom",
+    "react": "https://esm.sh/react@^19.2.3",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/"
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "framer-motion": "https://esm.sh/framer-motion@^12.28.1",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "vite": "https://esm.sh/vite@^7.3.1"
   }
 }
 </script>
-  </head>
+</head>
   <body>
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
-    <!-- Schema.org JSON-LD -->
+    <!-- Vite will automatically handle the entry point and transpilation -->
+    <script type="module" src="/index.tsx"></script>
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -88,20 +87,6 @@
       },
       "url": "https://homecrumb.bakery",
       "telephone": "+923000000000",
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "08:00",
-          "closes": "18:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
-          "opens": "09:00",
-          "closes": "14:00"
-        }
-      ],
       "priceRange": "PKR"
     }
     </script>
