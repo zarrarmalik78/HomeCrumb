@@ -1,5 +1,4 @@
-
-import { Product, Testimonial, Category } from './types';
+import { Product, Testimonial, Category } from './types.ts';
 
 export const CATEGORIES: Category[] = [
   { id: '1', label: 'All', value: 'all' },
