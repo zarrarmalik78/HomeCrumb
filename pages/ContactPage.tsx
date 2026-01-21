@@ -28,7 +28,7 @@ const ContactPage: React.FC = () => {
             className="text-6xl md:text-8xl font-serif font-black text-secondary mb-6"
           >
             Get in <span className="italic font-light">Touch.</span>
-          </h1 >
+          </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
