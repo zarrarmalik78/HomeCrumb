@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Star, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { PRODUCTS, CATEGORIES } from '../constants.tsx';
+import { PRODUCTS, CATEGORIES } from '../constants';
 
 const Menu: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState('all');
