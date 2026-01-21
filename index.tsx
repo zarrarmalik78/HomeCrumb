@@ -8,13 +8,9 @@ if (!rootElement) {
   throw new Error("Could not find root element to mount to. Ensure index.html has a div with id='root'.");
 }
 
-try {
-  const root = createRoot(rootElement);
-  root.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  );
-} catch (error) {
-  console.error("Failed to render the application:", error);
-}
+const root = createRoot(rootElement);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
